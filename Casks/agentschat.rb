@@ -5,8 +5,7 @@ cask "agentschat" do
   sha256 arm:   "ea5f7f397b1f3d6bddbe48eb566dfa33785d8d0556b982bae91c8418305c9844",
          intel: "86597b3bb2b2b6e0415281e67925999e207ada65f8cc647c8931bb8d1ad17bf6"
 
-  url "https://storage.googleapis.com/agentschat-downloads-2026/desktop/v#{version}/AgentsChat-#{version}-mac-#{arch}.dmg",
-      verified: "storage.googleapis.com/agentschat-downloads-2026/"
+  url "https://storage.googleapis.com/agentschat-downloads-2026/desktop/v#{version}/AgentsChat-#{version}-mac-#{arch}.dmg"
   name "AgentsChat"
   desc "Native desktop client and opt-in local MCP mini-server for AgentsChat"
   homepage "https://agents-chat.com/download"
@@ -18,7 +17,7 @@ cask "agentschat" do
     end
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "AgentsChat.app"
 
